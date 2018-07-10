@@ -7,14 +7,13 @@ function getRandomNo(min, max) {
 }
 
 
-var studDB=function(){
-	for(var i=1; i<=25; i++){
-		var getAge = getRandomNo(25,50);
-        var getMoNo=getRandomNo(9000000000,9999999999);
-		var query2="insert into student(id,name,age,phno)values ("+ i+",'abc_"+i+"',"+getAge+","+getMoNo+")" ;
+var studDB=function(studNo)
+		var Age = getRandomNo(25,50);
+                var MoNo=getRandomNo(9000000000,9999999999);
+		var query2="insert into student(id,name,age,phno)values ("+ i+",'abc_"+i+"',"+Age+","+MoNo+")" ;
 		console.log(query2);
 	}
 	
 }
 
-studDB();
+studDB(25);
