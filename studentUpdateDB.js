@@ -14,7 +14,7 @@ studentDB2[4]=s4;
 
 
 var studentDatabase = function(studentDB2,sID,x,y){
-	
+	console.log("Old Database......");
 	for(var i=1;i<=Object.keys(studentDB2).length;i++){
 		if(i == sID){
 			switch(x){
@@ -27,10 +27,10 @@ var studentDatabase = function(studentDB2,sID,x,y){
 	                    }
 		       }
 
-	
+      console.log("New Database......");
       Object.keys(studentDB2).forEach(
        function ([key]){
-		console.log("for in studentDB2 :: ", key, studentDB2[key]);
+		console.log("Students in studentDB2 :: ", key, studentDB2[key]);
 	     }
       )
 }
