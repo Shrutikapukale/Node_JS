@@ -18,10 +18,10 @@ var studentDatabase = function(studentDB2,sID,x,y){
 	for(var i=1;i<=Object.keys(studentDB2).length;i++){
 		if(i == sID){
 			switch(x){
-				case "ID":studentDB2[i].ID = sValue;break;
-				case "Name":studentDB2[i].Name = sValue;break
-				case "Age":studentDB2[i].Age = sValue;break
-				case "MoNo":studentDB2[i].MoNo = sValue;break;
+				case "ID":studentDB2[i].ID = y;break;
+				case "Name":studentDB2[i].Name = y;break
+				case "Age":studentDB2[i].Age = y;break
+				case "MoNo":studentDB2[i].MoNo = y;break;
 				Default:console.log("Error")
 				}	
 	                    }
