@@ -7,9 +7,7 @@ for(var j=1;j<=10;j++){
   console.log("Students....",studentDB2[j]);
 }
 
- console.log("length..stud.",Object.keys(studentDB2).length);
- console.log("DB length",Object.values(studentDB2).length)
-
+ 
 
 
 
@@ -26,14 +24,14 @@ var studentDatabase =function(studentDB2,sID,x,y){
 		
 		if(i == sID){
 				switch(x){
-						case "ID":studentDB2[i]="update student set name = updated_name_" +i+ " age:"+i+ "MoNo:" +i+ " where id="+y; break;
-						case "Name":studentDB2[i]="update student set name = " +y+ " age:"+i+ "MoNo:" +i+ " where id="+i; break;
-						case "Age":studentDB2[i]="update student set name = updated_name_" +i+ " age:"+y+ "MoNo:" +i+ " where id="+i;break
-						case "MoNo":studentDB2[i]="update student set name = updated_name_" +i+ " age:"+i+ "MoNo:" +y+ " where id="+i;break;
-						Default:cosole.log("Error");
-						}
+					case "ID":studentDB2[i]="update student set name = updated_name_" +i+ " age:"+i+ "MoNo:" +i+ " where id="+y; break;
+					case "Name":studentDB2[i]="update student set name = " +y+ " age:"+i+ "MoNo:" +i+ " where id="+i; break;
+					case "Age":studentDB2[i]="update student set name = updated_name_" +i+ " age:"+y+ "MoNo:" +i+ " where id="+i;break
+					case "MoNo":studentDB2[i]="update student set name = updated_name_" +i+ " age:"+i+ "MoNo:" +y+ " where id="+i;break;
+					Default:cosole.log("Error");
+					}
 			        }   
-				}
+			}
 		   
 		   
 	  console.log("New Database......");
