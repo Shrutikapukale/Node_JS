@@ -7,11 +7,6 @@ for(var j=1;j<=10;j++){
   console.log("Students....",studentDB2[j]);
 }
 
- 
-
-
-
-
 var studentDatabase =function(studentDB2,sID,x,y){
 	
 	console.log("old Database......");
