@@ -18,18 +18,17 @@ var studentDatabase = function(studentDB2,sID,x,y){
 	for(var i=1;i<=Object.keys(studentDB2).length;i++){
 		if(i == sID){
 			switch(x){
-					case "ID":studentDB2[i].ID = sValue;break;
-					case "Name":studentDB2[i].Name = sValue;break
-					case "Age":studentDB2[i].Age = sValue;break
-					case "MoNo":studentDB2[i].MoNo = sValue;break;
-					Default:cosole.log("Error")
-					}	
-	           }
-			   
-		   }
+				case "ID":studentDB2[i].ID = sValue;break;
+				case "Name":studentDB2[i].Name = sValue;break
+				case "Age":studentDB2[i].Age = sValue;break
+				case "MoNo":studentDB2[i].MoNo = sValue;break;
+				Default:cosole.log("Error")
+				}	
+	                    }
+		       }
 
 	
-	Object.keys(studentDB2).forEach(
+      Object.keys(studentDB2).forEach(
        function ([key]){
 		console.log("for in studentDB2 :: ", key, studentDB2[key]);
 	     }
