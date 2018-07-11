@@ -22,7 +22,7 @@ var studentDatabase = function(studentDB2,sID,x,y){
 				case "Name":studentDB2[i].Name = sValue;break
 				case "Age":studentDB2[i].Age = sValue;break
 				case "MoNo":studentDB2[i].MoNo = sValue;break;
-				Default:cosole.log("Error")
+				Default:console.log("Error")
 				}	
 	                    }
 		       }
