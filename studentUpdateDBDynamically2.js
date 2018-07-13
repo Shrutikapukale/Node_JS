@@ -17,9 +17,7 @@ for(var j=1;j<=5;j++){
 
 
 var studentDatabase =function(studentDB2,sID,x,y){
-	   console.log("X:",x)
-	   console.log("Y:",y)
-	   console.log("abc"+x+y)
+	   
 	
 	console.log("old Database......");
 	for(var i=1;i<=Object.keys(studentDB2).length;i++){
