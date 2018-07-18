@@ -4,8 +4,8 @@ var obj={};
 console.log("format:Update student set name= 'Shruti','MoNo':9999,'Age':25 where id 2");
 var updateStudent = function(obj,id) {
 	query="Update student set";
-	for(var key in obj){
-		query += key+"="+obj[key]+",";
+	for(var columnName in obj){
+		query += key+"="+obj[columnName]+",";
 	}
 	
 		query=query.slice(0,-1)  //to remove last index of string
