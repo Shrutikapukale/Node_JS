@@ -18,17 +18,17 @@ updateStudent({Name:"shruti","MoNo":9999,"Age":25},2);
 
 /////////////////////////////////////////////////////////////////////////////////////////
 console.log("Format:Update student set name= 'Shruti' where id in(1,2,3)");
- var updateStudent1 = function(obj,id) {
+ var updateStudentForMultipleIds = function(obj,ids) {
 	query="Update student set";
-	  for(var i in obj){
-			query += " "+ i+"='"+obj[i]+"',";
+	  for(var id in obj){
+			query += " "+ id+"='"+obj[id]+"',";
 		}
 		
 		
 		query=query.slice(0,-1)
 		query +=" where id in("
-		for(var i of id){
-			query += i + ","
+		for(var id of ids){
+			query += id + ","
 		}
 	
 		query = query.slice(0,-1)+");";
@@ -37,7 +37,7 @@ console.log("Format:Update student set name= 'Shruti' where id in(1,2,3)");
 }
 
 var ids=[1,2,3];
-updateStudent1({Name:"shruti",Age:20,MoNo:999},ids);
+updateStudentForMultipleIds({Name:"shruti",Age:20,MoNo:999},ids);
 
 //o/p:Update student set Name= 'shruti', Age= '20', MoNo= '999' where id in  (1,2,3);
 
