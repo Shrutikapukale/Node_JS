@@ -1,0 +1,46 @@
+var count = 0;
+var duplicate =[];
+var unique =[];
+
+var studentDB = [
+{"Id":1,"Name":"ABC","Age":20,"MoNo":111},
+{"Id":2,"Name":"DEF","Age":22,"MoNo":222},
+{"Id":3,"Name":"GHI","Age":25,"MoNo":333},
+{"Id":1,"Name":"ABC","Age":20,"MoNo":111},
+{"Id":4,"Name":"JKL","Age":30,"MoNo":444},
+{"Id":4,"Name":"JKL","Age":30,"MoNo":444},
+{"Id":7,"Name":"MNO","Age":28,"MoNo":777},
+{"Id":8,"Name":"PQR","Age":26,"MoNo":888},
+{"Id":1,"Name":"ABC","Age":20,"MoNo":111},
+{"Id":10,"Name":"STU","Age":27,"MoNo":999}];
+
+var sortSudentDB = function(studentDB){
+	for(i=0; i<studentDB.length;i++){
+		for(j=i; j<studentDB.length;j++){
+				if(studentDB[i].Id == studentDB[j].Id ){
+				 count++;
+				}
+		}
+			if(count>1){
+			 duplicate.push(studentDB[i]);
+			}
+			
+			else{
+				unique.push(studentDB[i]);
+			}
+			count =0;
+	}
+	
+}
+
+var printDuplicateStudent=function(duplicate){
+	console.log("Duplicae student:",duplicate);
+}
+
+var printUniqueStudent=function(unique){
+	console.log("unique student:",unique);
+}
+	
+sortSudentDB(studentDB);
+printDuplicateStudent(duplicate);
+printUniqueStudent(unique);	  
