@@ -22,7 +22,16 @@ var sortSudentDB = function(studentDB){
 				}
 		}
 			if(count>1){
+				var found = false;         //To avoid duplicate entry in duplicate array ,if we have same student entry more then 2 time.
+				for(dstudent of duplicate){
+					dId = dstudent['Id'];
+					if(studentDB[i].Id == dId){
+						found =true;
+					}
+				}
+				if(!found){
 			 duplicate.push(studentDB[i]);
+				}
 			}
 			
 			else{
